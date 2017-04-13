@@ -53,6 +53,14 @@ class MockLambdaContext(object):
         return self._invoked_function_arn
 
     @property
+    def memory_limit_in_mb(self):
+        """
+        :property: Memory limit, in MB, as a string
+        :rtype: str
+        """
+        return self._memory_limit_in_mb
+
+    @property
     def memory_limit(self):
         """
         :property: Memory limit, in MB, as a string
