@@ -61,14 +61,6 @@ class MockLambdaContext(object):
         return self._memory_limit_in_mb
 
     @property
-    def memory_limit(self):
-        """
-        :property: Memory limit, in MB, as a string
-        :rtype: str
-        """
-        return self._memory_limit_in_mb
-
-    @property
     def aws_request_id(self):
         """
         :property: AWS request id associated with invocation
